@@ -1,5 +1,5 @@
--- 1. Qual empresa utiliza o maior número de tecnologias na última pesquisa(2/2022)?
-	
+
+-- 1. Qual empresa utiliza o maior número de tecnologias na última pesquisa(2/2022)?	
 SELECT empresas.nome, COUNT(DISTINCT tecnologias.id) AS num_tecnologias
 FROM empresas
 JOIN relacao_empresas_tecnologias ON empresas.id = relacao_empresas_tecnologias.empresa_id
@@ -9,6 +9,7 @@ WHERE relatorios.data_compilacao = '2023-01-01' AND relatorios.data_compilacao <
 GROUP BY empresas.id
 ORDER BY num_tecnologias DESC
 LIMIT 1;
+
 -- 2. Qual empresa utilizava o menor número de tecnologias na pesquisa anterior (1/2022)?
 SELECT empresas.nome, COUNT(*) as num_tecnologias
 FROM relacao_empresas_tecnologias
