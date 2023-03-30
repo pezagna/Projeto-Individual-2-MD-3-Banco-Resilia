@@ -19,8 +19,8 @@ VALUES
 
 -- Popular tabela Relatórios
 INSERT INTO relatorios (data_compilacao) VALUES
-    ('2022-07-30'),
-    ('2023-01-01');
+    ('2021-12-31'),
+    ('2022-07-01');
 -- Popular tabela de relacao_empresas_tecnologias
 INSERT INTO relacao_empresas_tecnologias (empresa_id, tecnologia_id, relatorio_id) VALUES
     (1, 1, 1),
