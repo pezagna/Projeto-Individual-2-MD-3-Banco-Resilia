@@ -13,13 +13,12 @@ CREATE TABLE tecnologias (
     nome VARCHAR(100) NOT NULL,
     area VARCHAR(50)
 );
--- Criar tabela de relacionamento entre Empresas e Tecnologias nos Relatórios
+-- Criar tabela de relacionamento entre Empresas e Tecnologias nos relatórios
 CREATE TABLE relacao_empresas_tecnologias (
     id SERIAL PRIMARY KEY,
     empresa_id INTEGER NOT NULL,
     tecnologia_id INTEGER NOT NULL,
     relatorio_id INTEGER NOT NULL,
-    semestre INTEGER NOT NULL,
     FOREIGN KEY (empresa_id) REFERENCES empresas(id),
     FOREIGN KEY (tecnologia_id) REFERENCES tecnologias(id),
     FOREIGN KEY (relatorio_id) REFERENCES relatorios(id)
