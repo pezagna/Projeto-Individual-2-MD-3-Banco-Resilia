@@ -15,7 +15,7 @@ SELECT empresas.nome, COUNT(*) as num_tecnologias
 FROM relacao_empresas_tecnologias
 JOIN empresas ON empresas.id = relacao_empresas_tecnologias.empresa_id
 JOIN relatorios ON relatorios.id = relacao_empresas_tecnologias.relatorio_id
-WHERE relatorios.data_compilacao >= '2022-07-01' AND relatorios.data_compilacao <= '2021-12-31'
+WHERE relatorios.data_compilacao >= '2021-12-31' AND relatorios.data_compilacao <= '2022-07-01'
 GROUP BY empresas.id
 ORDER BY num_tecnologias ASC
 LIMIT 1;
