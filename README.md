@@ -1,8 +1,12 @@
 SENAC/RESILIA - Formação em Análise de Dados (FAD)
+
 Projeto individual 2 - Módulo 3 - Banco Resilia
+
 Data de criação: 28/03/2023
+
 Criação e edição: Robson da Silva
 
+Banco de dados utilizado: PostgreSQL
 
 CONTEXTO:
 
