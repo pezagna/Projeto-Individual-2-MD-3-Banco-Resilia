@@ -1,12 +1,13 @@
--- Popular tabela de Empresas
-INSERT INTO empresas (nome, endereco, telefone, email)
-VALUES
-    ('Resilia', 'Rua R, 123', 2112345678,'resilia@email.com'),
-    ('Senac', 'Rua S, 321', 2187654321,'senac@email.com'),
-    ('Cursos Gratis', 'Rua C, 100', 2188888888,'cursos_gratis@email.com'),
-    ('Escola Tekno', 'Rua T, 200', 2177777777,'escola_tekno@email.com');
 
--- Popular tabela de Tecnologias
+-- Inserir dados na tabela de Empresas
+INSERT INTO empresas (Nome, Endereco,Cnpj, Telefone, Email)
+VALUES
+    ('Resilia', 'Rua Resilia, 123',97473050000128, 2112345678,'resilia@email.com'),
+    ('Senac', 'Rua Senac Rio, 321',18747799000140, 2187654321,'senac@email.com'),
+    ('Cursos Gratis', 'Rua das Gracas, 100',64007263000105, 2188888888,'cursos_gratis@email.com'),
+    ('Escola Tekno', 'Rua dos teknicos, 200',75978781000192, 2177777777,'escola_tekno@email.com');
+
+-- Inserir dados na tabela de Tecnologias
 INSERT INTO tecnologias (nome, area)
 VALUES
     
@@ -17,11 +18,12 @@ VALUES
     ('Machine Learning', 'Ciência de Dados'),
     ('React', 'Desenvolvimento Web');
 
--- Popular tabela Relatórios
-INSERT INTO relatorios (data_compilacao) VALUES
+-- Inserir dados na tabela Relatórios
+INSERT INTO relatorios (data_do_relatorio) VALUES
     ('2021-12-31'),
     ('2022-07-01');
--- Popular tabela de relacao_empresas_tecnologias
+    
+-- Inserir dados na tabela de relacao_empresas_tecnologias
 INSERT INTO relacao_empresas_tecnologias (empresa_id, tecnologia_id, relatorio_id) VALUES
     (1, 1, 1),
     (1, 2, 1),
